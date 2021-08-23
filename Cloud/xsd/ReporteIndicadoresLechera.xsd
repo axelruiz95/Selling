@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteIndicadoresLechera" targetNamespace="http://tempuri.org/ReporteIndicadoresLechera.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteIndicadoresLechera.xsd" xmlns:mstns="http://tempuri.org/ReporteIndicadoresLechera.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Tiempos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DiaSemana" type="xs:string" />
+        <xs:element name="Fecha" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="HoraSalida" type="xs:string" />
+        <xs:element name="HoraRegreso" type="xs:string" />
+        <xs:element name="KmRecorrido" type="xs:integer" />
+        <xs:element name="TiempoRecorrido" type="xs:string" />
+        <xs:element name="TiempoVisita" type="xs:string" />
+        <xs:element name="TiempoTransito" type="xs:string" />
+        <xs:element name="TiempoPromedio" type="xs:string" />
+        <xs:element name="ClientesVisitadosA" type="xs:integer" />
+        <xs:element name="ClientesNoVisitadosA" type="xs:integer" />
+        <xs:element name="TotalClientesA" type="xs:integer" />
+        <xs:element name="EfectividadVisitaA" type="xs:double" />
+        <xs:element name="ClientesSinCompraA" type="xs:integer" />
+        <xs:element name="EfectividadCompraA" type="xs:double" />
+        <xs:element name="ClientesVisitadosFA" type="xs:integer" />
+        <xs:element name="ClientesSinCompraFA" type="xs:integer" />
+        <xs:element name="EfectividadCompraFA" type="xs:double" />
+        <xs:element name="Venta" type="xs:double" />
+        <xs:element name="KgLts" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

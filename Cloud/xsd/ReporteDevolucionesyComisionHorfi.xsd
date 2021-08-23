@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteDevolucionesyComisionHorfi" targetNamespace="http://tempuri.org/ReporteDevolucionesyComisionHorfi.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteDevolucionesyComisionHorfi.xsd" xmlns:mstns="http://tempuri.org/ReporteDevolucionesyComisionHorfi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DevolucionesyComisionHorfi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CEDI" type="xs:string" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="InicioS" type="xs:date" />
+        <xs:element name="FinV" type="xs:date" />
+        <xs:element name="DevolucionSabado" type="xs:double" />
+        <xs:element name="VentaSabado" type="xs:double" />
+        <xs:element name="DevolucionLunes" type="xs:double" />
+        <xs:element name="VentaLunes" type="xs:double" />
+        <xs:element name="DevolucionMartes" type="xs:double" />
+        <xs:element name="VentaMartes" type="xs:double" />
+        <xs:element name="DevolucionMiercoles" type="xs:double" />
+        <xs:element type="xs:double" name="VentaMiercoles" />
+        <xs:element name="DevolucionJueves" type="xs:double" />
+        <xs:element name="VentaJueves" type="xs:double" />
+        <xs:element name="DevolucionViernes" type="xs:double" />
+        <xs:element name="VentaViernes" type="xs:double" />
+        <xs:element name="PrecioUnitario" type="xs:double" />
+        <xs:element name="CaducoPermitido" type="xs:decimal" />
+        <xs:any />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

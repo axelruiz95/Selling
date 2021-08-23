@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteInventarioCompetencia" targetNamespace="http://tempuri.org/ReporteInventarioCompetencia.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteInventarioCompetencia.xsd" xmlns:mstns="http://tempuri.org/ReporteInventarioCompetencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReporteInventarioCompetencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="InventarioID" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:dateTime" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Inventario" type="xs:decimal" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="ProdComp1" type="xs:string" />
+        <xs:element name="CantComp1" type="xs:decimal" />
+        <xs:element name="TipPromComp1" type="xs:string" />
+        <xs:element name="ProdComp2" type="xs:string" />
+        <xs:element name="CantComp2" type="xs:decimal" />
+        <xs:element name="TipPromComp2" type="xs:string" />
+        <xs:element name="ProdComp3" type="xs:string" />
+        <xs:element name="CantComp3" type="xs:decimal" />
+        <xs:element name="TipPromComp3" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

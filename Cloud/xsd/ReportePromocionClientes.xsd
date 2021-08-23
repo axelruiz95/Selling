@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportePromocionClientes" targetNamespace="http://tempuri.org/ReportePromocionClientes.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReportePromocionClientes.xsd" xmlns:mstns="http://tempuri.org/ReportePromocionClientes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PromocionCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Agencia" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="ClienteClave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="PromocionClave" type="xs:string" />
+        <xs:element name="Promocion" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:int" />
+        <xs:element name="PrecioPromocion" type="xs:float" />
+        <xs:element name="Precio" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

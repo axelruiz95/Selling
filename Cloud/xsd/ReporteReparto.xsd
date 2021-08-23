@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteReparto" targetNamespace="http://tempuri.org/ReporteReparto.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteReparto.xsd" xmlns:mstns="http://tempuri.org/ReporteReparto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="RepartoDetallado">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CEDI" type="xs:string" />
+				<xs:element name="Vendedor" type="xs:string" />
+				<xs:element name="FechaEntrega" type="xs:dateTime" />
+				<xs:element name="Ruta" type="xs:string" />
+				<xs:element name="TransProdId" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="CLIClave" type="xs:string" />
+				<xs:element name="RazonSocial" type="xs:string" />
+				<xs:element name="NombreContacto" type="xs:string" />
+				<xs:element name="ProductoClave" type="xs:string" />
+				<xs:element name="PRONombre" type="xs:string" />
+				<xs:element name="Unidad" type="xs:string" />
+				<xs:element name="Cantidad" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Productos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProductoClave" type="xs:string" />
+				<xs:element name="PRONombre" type="xs:string" />
+				<xs:element name="Unidad" type="xs:string" />
+				<xs:element name="Cantidad" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RepartoGeneral">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CEDI" type="xs:string" />
+				<xs:element name="Vendedor" type="xs:string" />
+				<xs:element name="FechaEntrega" type="xs:dateTime" />
+				<xs:element name="Ruta" type="xs:string" />
+				<xs:element name="TransProdId" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="CLIClave" type="xs:string" />
+				<xs:element name="RazonSocial" type="xs:string" />
+				<xs:element name="NombreContacto" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

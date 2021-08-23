@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteClientesSinVenta" targetNamespace="http://tempuri.org/ReporteClientesSinVenta.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteClientesSinVenta.xsd" xmlns:mstns="http://tempuri.org/ReporteClientesSinVenta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ClientesSinVenta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AgrupadorEncabezado" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:date" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="NombreCorto" type="xs:string" />
+        <xs:element name="Calle" type="xs:string" />
+        <xs:element name="Numero" type="xs:string" />
+        <xs:element name="NumInt" type="xs:string" />
+        <xs:element name="Improductividad" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClientesNoVisitados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AgrupadorEncabezado" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:date" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="NombreCorto" type="xs:string" />
+        <xs:element name="Calle" type="xs:string" />
+        <xs:element name="Numero" type="xs:string" />
+        <xs:element name="NumInt" type="xs:string" />
+        <xs:element name="Improductividad" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

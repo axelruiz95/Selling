@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteConfirmacionesPedidos" targetNamespace="http://tempuri.org/ReporteConfirmacionesPedidos.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteConfirmacionesPedidos.xsd" xmlns:mstns="http://tempuri.org/ReporteConfirmacionesPedidos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pedidos">
+    <xs:complexType>
+      <xs:sequence>
+      </xs:sequence>
+      <xs:attribute name="Cliente" type="xs:string" />
+      <xs:attribute name="NumeroSAP" type="xs:string" />
+      <xs:attribute name="FechaCaptura" type="xs:date" />
+      <xs:attribute name="F1" type="xs:string" />
+      <xs:attribute name="EnviadoSap" type="xs:string" />
+      <xs:attribute name="ConfirmadoSap" type="xs:string" />
+      <xs:attribute name="NoPedidoSap" type="xs:string" />
+      <xs:attribute name="EstatusSap" type="xs:string" />
+      <xs:attribute name="ProductoClave" type="xs:string" />
+      <xs:attribute name="Nombre" type="xs:string" />
+      <xs:attribute name="Unidad" type="xs:string" />
+      <xs:attribute name="CantidadOriginal" type="xs:int" />
+      <xs:attribute name="CantidadConfirSap" type="xs:string" />
+      <xs:attribute name="TotalDetalle" type="xs:float" />
+      <xs:attribute name="Total" type="xs:float" />
+      <xs:attribute name="DescuentoFinal" type="xs:float" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

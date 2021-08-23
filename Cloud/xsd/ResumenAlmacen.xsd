@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResumenAlmacen" targetNamespace="http://tempuri.org/ResumenAlmacen.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ResumenAlmacen.xsd" xmlns:mstns="http://tempuri.org/ResumenAlmacen.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ResumenAlmacen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorID" type="xs:string" />
+        <xs:element name="NombreVendedor" type="xs:string" />
+        <xs:element name="ClaveUsuario" type="xs:string" />
+        <xs:element name="DiaClave" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="NombreProducto" type="xs:string" />
+        <xs:element name="InventarioInicial" type="xs:double" />
+        <xs:element name="Recarga" type="xs:double" />
+        <xs:element name="CambioDevolucionCte" type="xs:double" />
+        <xs:element name="CambioSalidaCte" type="xs:double" />
+        <xs:element name="Promocion" type="xs:double" />
+        <xs:element name="Descarga" type="xs:double" />
+        <xs:element name="Devolucion" type="xs:double" />
+        <xs:element name="Venta" type="xs:double" />        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

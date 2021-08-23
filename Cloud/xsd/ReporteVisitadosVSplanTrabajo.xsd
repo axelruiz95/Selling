@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteInformeClientes" targetNamespace="http://tempuri.org/ReporteInformeClientes.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteInformeClientes.xsd" xmlns:mstns="http://tempuri.org/ReporteInformeClientes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="visitavsplan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SUPClave" type="xs:string" />
+        <xs:element name="SUPNombre" type="xs:string" />
+        <xs:element name="Numero" type="xs:int" />
+        <xs:element name="OrdenVisita" type="xs:int" />
+        <xs:element name="FechaHoraInicial" type="xs:dateTime" />
+        <xs:element name="FechaHoraFinal" type="xs:dateTime" />
+        <xs:element name="DiaVisita" type="xs:string" />
+        <xs:element name="Codigo" type="xs:string" />
+        <xs:element name="NombreCliente" type="xs:string" />
+        <xs:element name="Direccion" type="xs:string" />
+        <xs:element name="Frecuencia" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="IdVendedor" type="xs:string" />
+        <xs:element name="UsuVenNom" type="xs:string" />
+        <xs:element name="AlmacenNom" type="xs:string" />
+        <xs:element name="Planeados" type="xs:int" />
+        <xs:element name="Visitados" type="xs:int" />
+        <xs:element name="EnFrecuencia" type="xs:int" />
+        <xs:element name="FueraFrecuencia" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

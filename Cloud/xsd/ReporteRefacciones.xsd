@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteRefacciones" targetNamespace="http://tempuri.org/ReporteRefacciones.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteRefacciones.xsd" xmlns:mstns="http://tempuri.org/ReporteRefacciones.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReporteRefacciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FolioInterno" type="xs:string" />
+        <xs:element name="FolioDacza" type="xs:string" />
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="NoParte" type="xs:string" />
+        <xs:element name="Descripcion" type="xs:string" />
+        <xs:element name="Taller" type="xs:string" />
+        <xs:element name="VIN" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

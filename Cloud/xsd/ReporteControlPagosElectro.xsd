@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteControlPagosElectro" targetNamespace="http://tempuri.org/ReporteControlPagosElectro.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteControlPagosElectro.xsd" xmlns:mstns="http://tempuri.org/ReporteControlPagosElectro.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pagos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="FechaVenta" type="xs:date" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="FechaAbono" type="xs:date" />
+        <xs:element name="TipoPago" type="xs:string" />
+        <xs:element name="Importe" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

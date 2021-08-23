@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteMercadeo" targetNamespace="http://tempuri.org/ReporteMercadeo.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteMercadeo.xsd" xmlns:mstns="http://tempuri.org/ReporteMercadeo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Mercadeo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Tipo" type="xs:string" />
+        <xs:element name="Presentacion" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:integer" />
+        <xs:element name="Precio" type="xs:float" />
+        <xs:element name="PrecioOferta" type="xs:float" />
+        <xs:element name="FechaVigencia" type="xs:date" />
+        <xs:element name="Marca" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

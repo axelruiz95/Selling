@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TiemposYMovtosCOS"
+    targetNamespace="http://tempuri.org/TiemposYMovtosCOS.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/TiemposYMovtosCOS.xsd"
+    xmlns:mstns="http://tempuri.org/TiemposYMovtosCOS.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TiemposYMovtosCOS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CEDIS" type="xs:string" />
+        <xs:element name="RUTA" type="xs:string" />
+        <xs:element name="USUARIO" type="xs:string" />
+        <xs:element name="FecAgenda" type="xs:dateTime" />
+        <xs:element name="FecPriVent" type="xs:dateTime" />
+        <xs:element name="Dif_min_Agenda" type="xs:string" />
+        <xs:element name="FecUltVent" type="xs:dateTime" />
+        <xs:element name="FFinJor" type="xs:dateTime" />
+        <xs:element name="Dif_min_Sinc" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

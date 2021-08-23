@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteProductoNegado" targetNamespace="http://tempuri.org/ReporteProductoNegado.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteProductoNegado.xsd" xmlns:mstns="http://tempuri.org/ReporteProductoNegado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Productos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Cedi" type="xs:string" />
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:float" />        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

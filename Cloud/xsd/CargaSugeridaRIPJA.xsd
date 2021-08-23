@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CargaSugeridaRIPJA" targetNamespace="http://tempuri.org/CargaSugeridaRIPJA.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/CargaSugeridaRIPJA.xsd" xmlns:mstns="http://tempuri.org/CargaSugeridaRIPJA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CargaSugerida">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="NombreLargo" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

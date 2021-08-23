@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteConsignacion" targetNamespace="http://tempuri.org/ReporteConsignacion.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteConsignacion.xsd" xmlns:mstns="http://tempuri.org/ReporteConsignacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="CorteCaja">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Clave" type="xs:string" />
+				<xs:element name="Concepto" type="xs:string" />
+				<xs:element name="FechaAbono" type="xs:dateTime" />
+				<xs:element name="FolioAbono" type="xs:string" />
+				<xs:element name="FolioDocumento" type="xs:string" />
+				<xs:element name="Referencia" type="xs:string" />
+				<xs:element name="Abono" type="xs:float" />
+				<xs:element name="Subtotal" type="xs:float" />
+				<xs:element name="IVA" type="xs:float" />
+				<xs:element name="FechaDocumento" type="xs:dateTime" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Configuracion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="NombreEmpresa" type="xs:string" />
+				<xs:element name="Logotipo" type="xs:hexBinary" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Totales">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Concepto" type="xs:string" />
+				<xs:element name="Total" type="xs:float" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NotaCredito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="ConceptoNC" />
+				<xs:element name="TotalNC" type="xs:float" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

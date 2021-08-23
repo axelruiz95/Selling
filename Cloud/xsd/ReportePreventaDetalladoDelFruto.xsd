@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportePreventaDetalladoDelFruto" targetNamespace="http://tempuri.org/ReportePreventaDetalladoDelFruto.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReportePreventaDetalladoDelFruto.xsd" xmlns:mstns="http://tempuri.org/ReportePreventaDetalladoDelFruto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PreventasDetalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="ClienteClave" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="FechaEntrega" type="xs:date" />
+        <xs:element name="TipoFase" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Cajas" type="xs:float" />
+        <xs:element name="OtrasUnidades" type="xs:float" />
+        <xs:element name="TipoEntrega" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PreventaTotalXProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="TipoUnidad" type="xs:int" />
+        <xs:element name="TotalUnidades" type="xs:float" />
+        <xs:element name="Importe" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

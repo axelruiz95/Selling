@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteListaSurtimientoCOS" targetNamespace="http://tempuri.org/ReporteListaSurtimientoCOS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteListaSurtimientoCOS.xsd" xmlns:mstns="http://tempuri.org/ReporteListaSurtimientoCOS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DetallePreventa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ALMClave" type="xs:string" />
+        <xs:element name="ALMNombre" type="xs:string" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="RUTDescripcion" type="xs:string" />
+        <xs:element name="ClienteClave" type="xs:string" />
+        <xs:element name="NombreCorto" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="FechaEntrega" type="xs:date" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:float" />
+        <xs:element name="Precio" type="xs:float" />
+        <xs:element name="SubTotal" type="xs:float" />
+        <xs:element name="IVA" type="xs:float" />
+        <xs:element name="IEPS" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TotalizadoPreventa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ALMClave" type="xs:string" />
+        <xs:element name="ALMNombre" type="xs:string" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="RUTDescripcion" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="UnidadMedida" type="xs:string" />
+        <xs:element name="TipoUnidad" type="xs:short" />
+        <xs:element name="TotalUnidades" type="xs:float" />
+        <xs:element name="Importe" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Rutas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="RUTDescripcion" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosConfiguracion" targetNamespace="http://tempuri.org/DatosConfiguracion.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/DatosConfiguracion.xsd" xmlns:mstns="http://tempuri.org/DatosConfiguracion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DatosConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NombreEmpresa" type="xs:string" />
+        <xs:element name="Calle" type="xs:string" />
+        <xs:element name="Numero" type="xs:string" />
+        <xs:element name="NumeroInterior" type="xs:string" />
+        <xs:element name="Colonia" type="xs:string" />
+        <xs:element name="Localidad" type="xs:string" />
+        <xs:element name="Telefono" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

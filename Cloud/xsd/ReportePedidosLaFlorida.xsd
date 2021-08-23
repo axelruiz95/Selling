@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportePedidosLaFlorida" targetNamespace="http://tempuri.org/ReportePedidosLaFlorida.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReportePedidosLaFlorida.xsd" xmlns:mstns="http://tempuri.org/ReportePedidosLaFlorida.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="RUTDescripcion" type="xs:string" />
+        <xs:element name="FechaEntrega" type="xs:date" />
+        <xs:element name="CLIClave" type="xs:string" />
+        <xs:element name="CLINombre" type="xs:string" />
+        <xs:element name="PROClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:double" />
+        <xs:element name="Kilos" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Almacen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="Telefono" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

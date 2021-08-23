@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionSchievenini" targetNamespace="http://tempuri.org/ReporteLiquidacionSchievenini.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionSchievenini.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionSchievenini.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Vendedores">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="ALMNombre" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="VENNombre" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="RUTDescripcion" type="xs:string" />
+				<xs:element name="Cobranza" type="xs:decimal" />
+				<xs:element name="Agendados" type="xs:decimal" />
+				<xs:element name="Visitados" type="xs:decimal" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Movimientos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="ProductoClave" type="xs:string" />
+				<xs:element name="PRONombre" type="xs:string" />
+				<xs:element name="InvInicial" type="xs:decimal" />
+				<xs:element name="DevolucionCli" type="xs:decimal" />
+				<xs:element name="Promocion" type="xs:decimal" />
+				<xs:element name="Descarga" type="xs:decimal" />
+				<xs:element name="Venta" type="xs:decimal" />
+				<xs:element name="Importe" type="xs:decimal" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Ventas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="FechaHoraAlta" type="xs:dateTime" />
+				<xs:element name="Cliente" type="xs:string" />
+				<xs:element name="Total" type="xs:decimal" />
+				<xs:element name="TipoFase" type="xs:integer" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Cobranza">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="CLIClave" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="FechaHoraAlta" type="xs:dateTime" />
+				<xs:element name="Total" type="xs:double" />
+				<xs:element name="Saldo" type="xs:double" />
+				<xs:element name="Simbolo" type="xs:string" />
+				<xs:element name="TipoPago" type="xs:string" />
+				<xs:element name="Referencia" type="xs:string" />
+				<xs:element name="Importe" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CobranzaNoRec">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="CLIClave" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="FechaHoraAlta" type="xs:dateTime" />
+				<xs:element name="Total" type="xs:double" />
+				<xs:element name="Saldo" type="xs:double" />
+				<xs:element name="Importe" type="xs:double" />
+				<xs:element name="Simbolo" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

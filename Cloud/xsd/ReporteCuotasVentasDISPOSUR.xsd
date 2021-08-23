@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteCuotasVentasDISPOSUR" targetNamespace="http://tempuri.org/ReporteCuotasVentasDISPOSUR.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteCuotasVentasDISPOSUR.xsd" xmlns:mstns="http://tempuri.org/ReporteCuotasVentasDISPOSUR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Encabezado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ALMClave" type="xs:string" />
+        <xs:element name="Almacen" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="CUOClave" type="xs:string" />
+        <xs:element name="Cuota" type="xs:string" />
+        <xs:element name="Periodo" type="xs:string" />
+        <xs:element name="DiasPeriodo" type="xs:int" />
+        <xs:element name="DiasTranscurridos" type="xs:int" />
+        <xs:element name="DiasFaltantes" type="xs:int" />
+        <xs:element name="EsquemaProProductoAvance" type="xs:float" />
+        <xs:element name="EsquemaProEfectivoAvance" type="xs:float" />
+        <xs:element name="EsquemaProKilosAvance" type="xs:float" />
+        <xs:element name="ProductoProductoAvance" type="xs:float" />
+        <xs:element name="ProductoEfectivoAvance" type="xs:float" />
+        <xs:element name="ProductoKilosAvance" type="xs:float" />
+        <xs:element name="EsquemaCliProductoAvance" type="xs:float" />
+        <xs:element name="EsquemaCliEfectivoAvance" type="xs:float" />
+        <xs:element name="EsquemaCliKilosAvance" type="xs:float" />
+        <xs:element name="EsquemaCliCobranzaAvance" type="xs:float" />
+        <xs:element name="ClienteProductoAvance" type="xs:float" />
+        <xs:element name="ClienteEfectivoAvance" type="xs:float" />
+        <xs:element name="ClienteKilosAvance" type="xs:float" />
+        <xs:element name="ClienteCobranzaAvance" type="xs:float" />
+        <xs:element name="VendedorProductoAvance" type="xs:float" />
+        <xs:element name="VendedorEfectivoAvance" type="xs:float" />
+        <xs:element name="VendedorKilosAvance" type="xs:float" />
+        <xs:element name="VendedorCobranzaAvance" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Detalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ALMClave" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="CUOClave" type="xs:string" />
+        <xs:element name="Tipo" type="xs:string" />
+        <xs:element name="Descripcion" type="xs:string" />
+        <xs:element name="ProductoMinimo" type="xs:float" />
+        <xs:element name="EfectivoMinimo" type="xs:float" />
+        <xs:element name="KilosMinimo" type="xs:float" />
+        <xs:element name="CobranzaMinimo" type="xs:float" />
+        <xs:element name="ProductoAvance" type="xs:float" />
+        <xs:element name="EfectivoAvance" type="xs:float" />
+        <xs:element name="KilosAvance" type="xs:float" />
+        <xs:element name="CobranzaAvance" type="xs:float" />
+        <xs:element name="Porcentaje" type="xs:float" />
+        <xs:element name="ProductoFaltante" type="xs:float" />
+        <xs:element name="EfectivoFaltante" type="xs:float" />
+        <xs:element name="KilosFaltante" type="xs:float" />
+        <xs:element name="CobranzaFaltante" type="xs:float" />
+        <xs:element name="PorcentajeFaltante" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

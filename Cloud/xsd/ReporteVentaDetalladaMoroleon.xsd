@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteVentaDetalladaMoroleon" targetNamespace="http://tempuri.org/ReporteVentaDetalladaMoroleon.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteVentaDetalladaMoroleon.xsd" xmlns:mstns="http://tempuri.org/ReporteVentaDetalladaMoroleon.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ventas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="TransProdId" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="PrecioU" type="xs:float" />
+        <xs:element name="Cedi" type="xs:string" />
+        <xs:element name="Cant" type="xs:float" />
+        <xs:element name="SubTotal" type="xs:float" />
+        <xs:element name="DescProducto" type="xs:float" />
+        <xs:element name="DescuentoCliente" type="xs:float" />
+        <xs:element name="DescVend" type="xs:float" />
+        <xs:element name="IVA" type="xs:float" />
+        <xs:element name="IEPS" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasKg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="TransProdId" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="KgLts" type="xs:float" />
+        <xs:element name="PrecioU" type="xs:float" />
+        <xs:element name="Cedi" type="xs:string" />
+        <xs:element name="Cant" type="xs:float" />
+        <xs:element name="SubTotal" type="xs:float" />
+        <xs:element name="DescProducto" type="xs:float" />
+        <xs:element name="DescuentoCliente" type="xs:float" />
+        <xs:element name="DescVend" type="xs:float" />
+        <xs:element name="IVA" type="xs:float" />
+        <xs:element name="IEPS" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Cedi" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />        
+        <xs:element name="Cantidad" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasProductoPorPrecio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="PrecioU" type="xs:float" />
+        <xs:element name="Cant" type="xs:float" />
+        <xs:element name="SubTotal" type="xs:float" />
+        <xs:element name="DescProducto" type="xs:float" />
+        <xs:element name="DescuentoCliente" type="xs:float" />
+        <xs:element name="DescVend" type="xs:float" />
+        <xs:element name="IVA" type="xs:float" />
+        <xs:element name="IEPS" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasProductoPorPrecioKg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="KgLts" type="xs:float" />
+        <xs:element name="PrecioU" type="xs:float" />
+        <xs:element name="Cant" type="xs:float" />
+        <xs:element name="SubTotal" type="xs:float" />
+        <xs:element name="DescProducto" type="xs:float" />
+        <xs:element name="DescuentoCliente" type="xs:float" />
+        <xs:element name="DescVend" type="xs:float" />
+        <xs:element name="IVA" type="xs:float" />
+        <xs:element name="IEPS" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasProductoKg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Cedi" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Unidad" type="xs:string" />
+        <xs:element name="KgLts" type="xs:float" />
+        <xs:element name="Cantidad" type="xs:float" />
+        <xs:element name="Total" type="xs:float" />        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteOrdenesTrabajo" targetNamespace="http://tempuri.org/ReporteOrdenesTrabajo.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteOrdenesTrabajo.xsd" xmlns:mstns="http://tempuri.org/ReporteOrdenesTrabajo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReporteOrdenesTrabajo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="Taller" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="VIN" type="xs:string" />
+        <xs:element name="FolioOrden" type="xs:string" />
+        <xs:element name="Kilometraje" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Producto" type="xs:short" />
+        <xs:element name="Cantidad" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Configuracion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NombreEmpresa" type="xs:string" />
+        <xs:element name="Logotipo" type="xs:hexBinary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Resumen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

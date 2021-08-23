@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteImproductividadXClienteCasaGarcia" targetNamespace="http://tempuri.org/ReporteImproductividadXClienteCasaGarcia.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteImproductividadXClienteCasaGarcia.xsd" xmlns:mstns="http://tempuri.org/ReporteImproductividadXClienteCasaGarcia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Improductividad">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CentroDistribucion" type="xs:string" />
+				<xs:element name="Comentario" type="xs:string" />
+				<xs:element name="Clave" type="xs:string" />
+				<xs:element name="RazonSocial" type="xs:string" />
+				<xs:element name="Fecha" type="xs:dateTime" />
+				<xs:element name="Motivo" type="xs:string" />
+				<xs:element name="Vendedor" type="xs:string" />
+				<xs:element name="NombreContacto" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ClientesAgenda">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="CentroDistribucion" type="xs:string" />
+				<xs:element name="TotalAgenda1" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

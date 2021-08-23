@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteInformeClientes" targetNamespace="http://tempuri.org/ResumenTiemposMovimientos.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ResumenTiemposMovimientos.xsd" xmlns:mstns="http://tempuri.org/ResumenTiemposMovimientos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ResumenTiemposMovimientos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveSupervisor" type="xs:string" />
+        <xs:element name="NombreSupervisor" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="RutClave" type="xs:string" />
+        <xs:element name="Actividad" type="xs:string" />
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="HoraInicial" type="xs:string" />
+        <xs:element name="HoraFinal" type="xs:string" />
+        <xs:element name="TiempoFinal" type="xs:string" />
+        <xs:element name="Cliente" type="xs:float" />
+        <xs:element name="NombreCliente" type="xs:string" />
+        <xs:element name="Direccion" type="xs:string" />
+        <xs:element name="Documento" type="xs:string" />
+        <xs:element name="Total" type="xs:float" />
+        <xs:element name="Numero" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

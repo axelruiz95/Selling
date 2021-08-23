@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteVentasPorVolumenDeCompra" targetNamespace="http://tempuri.org/ReporteVentasPorVolumenDeCompra.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteVentasPorVolumenDeCompra.xsd" xmlns:mstns="http://tempuri.org/ReporteVentasPorVolumenDeCompra.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="VentasxVolumenCompra">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SUPClave" type="xs:string" />
+        <xs:element name="SUPNombre" type="xs:string" />
+        <xs:element name="VendedorID" type="xs:string" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="Usuario" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="GiroNegocio" type="xs:string" />
+        <xs:element name="Familia" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="NombreLargo" type="xs:string" />
+        <xs:element name="CantidadCajas" type="xs:integer" />
+        <xs:element name="CantidadPaquetes" type="xs:integer" />
+        <xs:element name="SubTotalCantidad" type="xs:integer" />
+        <xs:element name="SubTotalPesos" type="xs:float" />
+        <xs:element name="Orden" type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

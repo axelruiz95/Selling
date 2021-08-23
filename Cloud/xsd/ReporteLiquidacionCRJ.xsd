@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionCRJ" targetNamespace="http://tempuri.org/ReporteLiquidacionCRJ.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionCRJ.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionCRJ.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Agrupadores">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="Nombre" type="xs:string" />
+				<xs:element name="FechaCaptura" type="xs:date" />
+				<xs:element name="RUTClave" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Envase">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="FechaCaptura" type="xs:date" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Cantidad" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Liquido">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="FechaCaptura" type="xs:date" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Entregadas" type="xs:int" />
+				<xs:element name="Canceladas" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Almacen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="FechaCaptura" type="xs:date" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Envase" type="xs:int" />
+				<xs:element name="Liquido" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Cobranza">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="FechaCaptura" type="xs:date" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Total" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Preliquidacion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="FechaCaptura" type="xs:date" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Deposito" type="xs:double" />
+				<xs:element name="Efectivo" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

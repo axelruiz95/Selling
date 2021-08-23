@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteDocumentosConSaldo" targetNamespace="http://tempuri.org/ReporteDocumentosConSaldo.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteDocumentosConSaldo.xsd" xmlns:mstns="http://tempuri.org/ReporteDocumentosConSaldo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Documentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ALMClave" type="xs:string" />
+        <xs:element name="ALMNombre" type="xs:string" />
+        <xs:element name="USUClave" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="RUTNombre" type="xs:string" />
+        <xs:element name="CLIClave" type="xs:string" />
+        <xs:element name="CLINombre" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:date" />
+        <xs:element name="FechaCobranza" type="xs:date" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="Saldo" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

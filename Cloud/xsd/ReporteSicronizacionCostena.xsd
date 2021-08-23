@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteSicronizacionCostena" targetNamespace="http://tempuri.org/ReporteSicronizacionCostena.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteSicronizacionCostena.xsd" xmlns:mstns="http://tempuri.org/ReporteSicronizacionCostena.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="VendedorJornada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="ALMNombre" type="xs:string" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="CierreJornada" type="xs:short" />
+        <xs:element name="FechaHoraCierre" type="xs:dateTime" />
+        <xs:element name="FechaEnvioInformacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

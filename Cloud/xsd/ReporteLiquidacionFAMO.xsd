@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionFAMO" targetNamespace="http://tempuri.org/ReporteLiquidacionFAMO.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionFAMO.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionFAMO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LiquidacionProductos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="Dia" type="xs:string" />
+        <xs:element name="Semana" type="xs:int" />
+        <xs:element name="PrecioUnitario" type="xs:float" />
+        <xs:element name="PrimeraCarga" type="xs:int" />
+        <xs:element name="Recargas" type="xs:int" />
+        <xs:element name="Descargas" type="xs:int" />
+        <xs:element name="Devoluciones" type="xs:int" />
+        <xs:element name="DevolucionesCte" type="xs:int" />
+        <xs:element name="VentasContado" type="xs:int" />
+        <xs:element name="VentasCredito" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cobranza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TotalCobranza" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GraficaDevo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="Dia" type="xs:string" />
+        <xs:element name="Semana" type="xs:int" />
+        <xs:element name="Devoluciones" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GraficaDesc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="Dia" type="xs:string" />
+        <xs:element name="Semana" type="xs:int" />
+        <xs:element name="Cargas" type="xs:int" />
+        <xs:element name="Descargas" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LiquidacionProductosSemanal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="Semana" type="xs:int" />
+        <xs:element name="PrecioUnitario" type="xs:float" />
+        <xs:element name="LunesCargas" type="xs:int" />
+        <xs:element name="LunesDescargas" type="xs:int" />
+        <xs:element name="LunesDevoluciones" type="xs:int" />
+        <xs:element name="MartesCargas" type="xs:int" />
+        <xs:element name="MartesDescargas" type="xs:int" />
+        <xs:element name="MartesDevoluciones" type="xs:int" />
+        <xs:element name="MiercolesCargas" type="xs:int" />
+        <xs:element name="MiercolesDescargas" type="xs:int" />
+        <xs:element name="MiercolesDevoluciones" type="xs:int" />
+        <xs:element name="JuevesCargas" type="xs:int" />
+        <xs:element name="JuevesDescargas" type="xs:int" />
+        <xs:element name="JuevesDevoluciones" type="xs:int" />
+        <xs:element name="ViernesCargas" type="xs:int" />
+        <xs:element name="ViernesDescargas" type="xs:int" />
+        <xs:element name="ViernesDevoluciones" type="xs:int" />
+        <xs:element name="SabadoCargas" type="xs:int" />
+        <xs:element name="SabadoDescargas" type="xs:int" />
+        <xs:element name="SabadoDevoluciones" type="xs:int" />
+        <xs:element name="LunesVentasContado" type="xs:int" />
+        <xs:element name="LunesVentasCredito" type="xs:int" />
+        <xs:element name="MartesVentasContado" type="xs:int" />
+        <xs:element name="MartesVentasCredito" type="xs:int" />
+        <xs:element name="MiercolesVentasContado" type="xs:int" />
+        <xs:element name="MiercolesVentasCredito" type="xs:int" />
+        <xs:element name="JuevesVentasContado" type="xs:int" />
+        <xs:element name="JuevesVentasCredito" type="xs:int" />
+        <xs:element name="ViernesVentasContado" type="xs:int" />
+        <xs:element name="ViernesVentasCredito" type="xs:int" />
+        <xs:element name="SabadoVentasContado" type="xs:int" />
+        <xs:element name="SabadoVentasCredito" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Grafica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="PZVendidasT" type="xs:string" />
+        <xs:element name="RegresoT" type="xs:string" />
+        <xs:element name="DevolucionesT" type="xs:string" />
+        <xs:element name="Ventas" type="xs:int" />
+        <xs:element name="Descargas" type="xs:int" />
+        <xs:element name="Devoluciones" type="xs:int" />
+        <xs:element name="Cargas" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

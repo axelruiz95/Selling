@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteComisionesCIN" targetNamespace="http://tempuri.org/ReporteComisionesCIN.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteComisionesCIN.xsd" xmlns:mstns="http://tempuri.org/ReporteComisionesCIN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Comisiones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Movimiento" type="xs:string" />
+        <xs:element name="DiaClave" type="xs:string" />
+        <xs:element name="Cantidad" type="xs:double" />
+        <xs:element name="LimiteDescuento" type="xs:double" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="Comision" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

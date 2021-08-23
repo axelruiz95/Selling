@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportePreventa" targetNamespace="http://tempuri.org/ReportePreventa.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReportePreventa.xsd" xmlns:mstns="http://tempuri.org/ReportePreventa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Preventa">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Fecha" type="xs:dateTime" />
+				<xs:element name="Clave" type="xs:string" />
+				<xs:element name="NumeroCliente" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="Consignado" type="xs:string" />
+				<xs:element name="ProductoClave" type="xs:string" />
+				<xs:element name="Producto" type="xs:string" />
+				<xs:element name="Unidad" type="xs:string" />
+				<xs:element name="Precio" type="xs:float" />
+				<xs:element name="MercSinCargo" type="xs:float" />
+				<xs:element name="Subtotal" type="xs:float" />
+				<xs:element name="Descuento1" type="xs:string" />
+				<xs:element name="Descuento2" type="xs:string" />
+				<xs:element name="Descuento3" type="xs:string" />
+				<xs:element name="TotalDesc" type="xs:string" />
+				<xs:element name="IEPS" type="xs:float" />
+				<xs:element name="IVA" type="xs:float" />
+				<xs:element name="Impuesto" type="xs:float" />
+				<xs:element name="Total" type="xs:float" />
+				<xs:element name="Notas" type="xs:string" />
+				<xs:element name="Ruta" type="xs:string" />
+				<xs:element name="Cantidad" type="xs:float">
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Configuracion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="NombreEmpresa" type="xs:string" />
+				<xs:element name="Logotipo" type="xs:hexBinary" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

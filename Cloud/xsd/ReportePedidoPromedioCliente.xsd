@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportePedidoPromedioCliente" targetNamespace="http://tempuri.org/ReportePedidoPromedioCliente.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReportePedidoPromedioCliente.xsd" xmlns:mstns="http://tempuri.org/ReportePedidoPromedioCliente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Clientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RutClave" type="xs:string" />
+        <xs:element name="Descripcion" type="xs:string" />
+        <xs:element name="ClaveEsquema" type="xs:string" />
+        <xs:element name="NombreEsquema" type="xs:date" />
+        <xs:element name="ClaveCliente" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="NombreCorto" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="Total" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

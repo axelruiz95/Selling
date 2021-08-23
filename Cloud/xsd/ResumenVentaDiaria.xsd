@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResumenVentaDiaria" targetNamespace="http://tempuri.org/ResumenVentaDiaria.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ResumenVentaDiaria.xsd" xmlns:mstns="http://tempuri.org/ResumenVentaDiaria.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Resumen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveCedi" type="xs:string" />
+				<xs:element name="NombreCedi" type="xs:string" />
+				<xs:element name="Ruta" type="xs:string" />
+				<xs:element name="Vendedor" type="xs:string" />
+				<xs:element name="ClientesAVisitar" type="xs:int" />
+				<xs:element name="ClientesVisitados" type="xs:int" />
+				<xs:element name="ImporteVenta" type="xs:double" />
+				<xs:element name="ImporteDescuento" type="xs:double" />
+				<xs:element name="ImporteVentaContado" type="xs:double" />
+				<xs:element name="ImporteVentaCredito" type="xs:double" />
+				<xs:element name="AbonoCreditos" type="xs:double" />
+				<xs:element name="Subtotal" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

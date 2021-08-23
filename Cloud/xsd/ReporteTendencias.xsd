@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteTotalVentasElectro" targetNamespace="http://tempuri.org/ReporteTotalVentasElectro.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteTotalVentasElectro.xsd" xmlns:mstns="http://tempuri.org/ReporteTotalVentasElectro.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PorPeriodo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="START_OF_WEEK" type="xs:dateTime" />
+        <xs:element name="END_OF_WEEK" type="xs:dateTime" />
+        <xs:element name="Inventario" type="xs:float" />
+        <xs:element name="Desplazamiento" type="xs:float" />
+        <xs:element name="Semanas" type="xs:float" />
+        <xs:element name="CostoInv" type="xs:float" />
+        <xs:element name="CostoDesp" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Configuracion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NombreEmpresa" type="xs:string" />
+        <xs:element name="Logotipo" type="xs:hexBinary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PorMes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Mes" type="xs:int" />
+        <xs:element name="Inventario" type="xs:float" />
+        <xs:element name="Desplazamiento" type="xs:float" />
+        <xs:element name="Semanas" type="xs:float" />
+        <xs:element name="CostoInv" type="xs:float" />
+        <xs:element name="CostoDesp" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Comparativo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Fecha" type="xs:dateTime" />
+        <xs:element name="Inventario" type="xs:float" />
+        <xs:element name="Desplazamiento" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

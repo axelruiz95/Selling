@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteCargasLaFlorida" targetNamespace="http://tempuri.org/ReporteCargasLaFlorida.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteCargasLaFlorida.xsd" xmlns:mstns="http://tempuri.org/ReporteCargasLaFlorida.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Detalle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ESQClave" type="xs:string" />
+        <xs:element name="ESQNombre" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="ProductoNombre" type="xs:string" />
+        <xs:element name="CantidadAlmacen" type="xs:int" />
+        <xs:element name="UnidadAlmacen" type="xs:string" />
+        <xs:element name="CantidadDetalle" type="xs:int" />
+        <xs:element name="UnidadDetalle" type="xs:string" />
+        <xs:element name="Kilos" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Carga">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveOrigen" type="xs:string" />
+        <xs:element name="NombreOrigen" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="Telefono" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:date" />
+        <xs:element name="USUClave" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+        <xs:element name="ClaveDestino" type="xs:string" />
+        <xs:element name="NombreDestino" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

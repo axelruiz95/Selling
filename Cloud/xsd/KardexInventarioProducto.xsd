@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KardexInventarioProducto" targetNamespace="http://tempuri.org/KardexInventarioProducto.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/KardexInventarioProducto.xsd" xmlns:mstns="http://tempuri.org/KardexInventarioProducto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="KardexInventarioProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RutClave" type="xs:string" />
+        <xs:element name="NombreRuta" type="xs:date" />
+        <xs:element name="NoParte" type="xs:string" />
+        <xs:element name="Descripcion" type="xs:string" />
+        <xs:element name="InventarioInicial" type="xs:float" />
+        <xs:element name="Entradas" type="xs:float" />
+        <xs:element name="Salidas" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

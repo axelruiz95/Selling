@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteBonificacion" targetNamespace="http://tempuri.org/ReporteBonificacion.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteBonificacion.xsd" xmlns:mstns="http://tempuri.org/ReporteBonificacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Bonificacion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="Total" type="xs:decimal" />
+				<xs:element name="FechaBonificacion" type="xs:dateTime" />
+				<xs:element type="xs:integer" name="TipoEstado" />
+				<xs:element name="MFechaHora" type="xs:dateTime" />
+				<xs:element name="FolioVenta" type="xs:string" />
+				<xs:element name="FechaVenta" type="xs:dateTime" />
+				<xs:element name="TotalVenta" type="xs:decimal" />
+				<xs:element name="ClaveCedi" type="xs:string" />
+				<xs:element name="Cedi" type="xs:string" />
+				<xs:element name="Clave" type="xs:string" />
+				<xs:element name="NombreCorto" type="xs:string" />
+				<xs:element name="Referencia" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

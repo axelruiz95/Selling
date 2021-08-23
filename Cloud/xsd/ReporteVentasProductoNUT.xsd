@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteVentasProductoNUT" targetNamespace="http://tempuri.org/ReporteVentasProductoNUT.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteVentasProductoNUT.xsd" xmlns:mstns="http://tempuri.org/ReporteVentasProductoNUT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ReporteVentasProductoNUT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="ClienteClave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="KgLts" type="xs:int" />
+        <xs:element name="Precio" type="xs:double" />
+        <xs:element name="Cantidad" type="xs:int" />
+        <xs:element name="KgTotal" type="xs:int" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="MFechaHora" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

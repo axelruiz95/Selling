@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteMovimientosProdNor" targetNamespace="http://tempuri.org/ReporteMovimientosProdNor.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteMovimientosProdNor.xsd" xmlns:mstns="http://tempuri.org/ReporteMovimientosProdNor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Movimientos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:date" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Existencia" type="xs:int" />
+        <xs:element name="Venta" type="xs:int" />
+        <xs:element name="Devolucion" type="xs:int" />
+        <xs:element name="MotivoDevolucion" type="xs:string" />
+        <xs:element name="Rotacion" type="xs:int" />
+        <xs:element name="MotivoRotacion" type="xs:string" />
+        <xs:element name="MotivoNoCompra" type="xs:string" />        
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DatosCEDI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="Telefono" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

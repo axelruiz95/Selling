@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionSierraNorte" targetNamespace="http://tempuri.org/ReporteLiquidacionSierraNorte.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionSierraNorte.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionSierraNorte.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Movimientos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="InvInicial" type="xs:long" />
+        <xs:element name="Carga" type="xs:long" />
+        <xs:element name="Descarga" type="xs:long" />
+        <xs:element name="Promocion" type="xs:long" />
+        <xs:element name="Consignacion" type="xs:long" />
+        <xs:element name="Venta" type="xs:long" />
+        <xs:element name="Importe" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentaCobranza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="Contado" type="xs:double" />
+        <xs:element name="ContadoCanc" type="xs:double" />
+        <xs:element name="Credito" type="xs:double" />
+        <xs:element name="CreditoCanc" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Envases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="PRONombre" type="xs:string" />
+        <xs:element name="Saldo" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Vendedores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="ALMClave" type="xs:string" />
+        <xs:element name="ALMNombre" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="USUClave" type="xs:string" />
+        <xs:element name="VENNombre" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasCreditoContado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="Remision" type="xs:string" />
+        <xs:element name="FechaHoraAlta" type="xs:dateTime" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="Estatus" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cobranza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="FechaHora" type="xs:dateTime" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Importe" type="xs:double" />
+        <xs:element name="Estatus" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Agendados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="ClientesAgendados" type="xs:int" />
+        <xs:element name="ClientesVisitados" type="xs:int" />
+        <xs:element name="ClientesNoVisitados" type="xs:int" />
+        <xs:element name="VisitadosConVenta" type="xs:int" />
+        <xs:element name="VisitadosSinVenta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NoAgendados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="FueraFrecuencia" type="xs:long" />
+        <xs:element name="ConVenta" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tiempos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveCEDI" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="HoraInicialJornada" type="xs:dateTime" />
+        <xs:element name="HoraFinalJornada" type="xs:dateTime" />
+        <xs:element name="TiempoVisita" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

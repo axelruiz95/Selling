@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionNGO" targetNamespace="http://tempuri.org/ReporteLiquidacionNGO.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionNGO.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionNGO.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Agrupador">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AlmacenId" type="xs:string" />
+				<xs:element name="ALMClave" type="xs:string" />
+				<xs:element name="ALMNombre" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="USUClave" type="xs:string" />
+				<xs:element name="USUNombre" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="RUTDescripcion" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Liquido">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AlmacenId" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="ProductoClave" type="xs:string" />
+				<xs:element name="Nombre" type="xs:string" />
+				<xs:element name="Carga" type="xs:int" />
+				<xs:element name="Recarga" type="xs:int" />
+				<xs:element name="Devolucion" type="xs:int" />
+				<xs:element name="Bonificacion" type="xs:int" />
+				<xs:element name="VentaContado" type="xs:int" />
+				<xs:element name="VentaCredito" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Envase">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AlmacenId" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="ProductoClave" type="xs:string" />
+				<xs:element name="Nombre" type="xs:string" />
+				<xs:element name="Recoleccion" type="xs:int" />
+				<xs:element name="Devolucion" type="xs:int" />
+				<xs:element name="Bonificacion" type="xs:int" />
+				<xs:element name="Venta" type="xs:int" />
+				<xs:element name="Importe" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImporteVentas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AlmacenId" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="TipoVenta" type="xs:string" />
+				<xs:element name="Total" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Cobranza">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="AlmacenId" type="xs:string" />
+				<xs:element name="VendedorId" type="xs:string" />
+				<xs:element name="RUTClave" type="xs:string" />
+				<xs:element name="Folio" type="xs:string" />
+				<xs:element name="Importe" type="xs:double" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteDetalleInvEnvStoryBird" targetNamespace="http://tempuri.org/ReporteDetalleInvEnvStoryBird.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteDetalleInvEnvStoryBird.xsd" xmlns:mstns="http://tempuri.org/ReporteDetalleInvEnvStoryBird.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DetalleInventario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Almacen" type="xs:string" />
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="FechaCaptura" type="xs:date" />
+        <xs:element name="Cantidad" type="xs:float" />
+        <xs:element name="Ruta" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

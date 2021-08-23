@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteInformeClientes" targetNamespace="http://tempuri.org/ReporteActividadesAcumulado.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteActividadesAcumulado.xsd" xmlns:mstns="http://tempuri.org/ReporteActividadesAcumulado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ActividadesAcumulado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DiaClave" type="xs:string" />
+        <xs:element name="ClaveSupervisor" type="xs:string" />
+        <xs:element name="NombreSupervisor" type="xs:string" />
+        <xs:element name="VendedorId" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="RutClave" type="xs:string" />
+        <xs:element name="ClientesProgramados" type="xs:float" />
+        <xs:element name="ClientesVisitadosEnAgenda" type="xs:float" />
+        <xs:element name="ClientesEfectivo" type="xs:float" />
+        <xs:element name="ClientesConCompraEnAgenda" type="xs:float" />
+        <xs:element name="EfectividadCompra" type="xs:float" />
+        <xs:element name="EfectividadSinCompra" type="xs:float" />
+        <xs:element name="VisitaNoProgramada" type="xs:float" />
+        <xs:element name="VisitaSinResultado" type="xs:float" />
+        <xs:element name="VentaTotal" type="xs:float" />
+        <xs:element name="VentaTotalCajas" type="xs:float" />
+        <xs:element name="VentaPromedio" type="xs:float" />
+        <xs:element name="VentaPromedioCajas" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

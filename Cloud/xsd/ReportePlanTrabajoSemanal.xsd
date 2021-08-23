@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteInformeClientes" targetNamespace="http://tempuri.org/ReportePlanTrabajoSemanal.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReportePlanTrabajoSemanal.xsd" xmlns:mstns="http://tempuri.org/ReportePlanTrabajoSemanal.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PlanTrabajo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveSupervisor" type="xs:string" />
+        <xs:element name="NombreSupervisor" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="OrdenVisita" type="xs:double" />
+        <xs:element name="CodigoCliente" type="xs:string" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="RazonSocial" type="xs:string" />
+        <xs:element name="RFC" type="xs:string" />
+        <xs:element name="Direccion" type="xs:string" />
+        <xs:element name="Colonia" type="xs:string" />
+        <xs:element name="Telefono" type="xs:string" />
+        <xs:element name="DiaSemana" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

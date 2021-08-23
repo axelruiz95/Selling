@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionQDL" targetNamespace="http://tempuri.org/ReporteLiquidacionQDL.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionQDL.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionQDL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Liquidacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="CargasPZA" type="xs:int" />
+        <xs:element name="CargasKG" type="xs:float" />
+        <xs:element name="DevolucionesCliPZA" type="xs:int" />
+        <xs:element name="DevolucionesCliKG" type="xs:float" />
+        <xs:element name="CambiosEntradaPZA" type="xs:int" />
+        <xs:element name="CambiosEntradaKG" type="xs:float" />
+        <xs:element name="CambiosSalidaPZA" type="xs:int" />
+        <xs:element name="CambiosSalidaKG" type="xs:float" />
+        <xs:element name="DegustacionPZA" type="xs:int" />
+        <xs:element name="DegustacionKG" type="xs:float" />
+        <xs:element name="DevolucionAlmacenPZA" type="xs:int" />
+        <xs:element name="DevolucionAlmacenKG" type="xs:float" />
+        <xs:element name="VentasContadoPZA" type="xs:int" />
+        <xs:element name="VentasContadoKG" type="xs:float" />
+        <xs:element name="VentasCreditoPZA" type="xs:int" />
+        <xs:element name="VentasCreditoKG" type="xs:float" />
+        <xs:element name="InventarioFinalPZA" type="xs:int" />
+        <xs:element name="InventarioFinalKG" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasContado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Remision" type="xs:string" />
+        <xs:element name="Horas" type="xs:time" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Importe" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasCredito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Remision" type="xs:string" />
+        <xs:element name="Horas" type="xs:time" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Importe" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cobranza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Remision" type="xs:string" />
+        <xs:element name="Horas" type="xs:time" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Importe" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DevolucionCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="Hora" type="xs:time" />
+        <xs:element name="Cliente" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DesgloseEfectivo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Importe" type="xs:double" />
+        <xs:element name="Cantidad" type="xs:int" />
+        <xs:element name="Total" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DesgloseDocumentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Banco" type="xs:string" />
+        <xs:element name="NChequq" type="xs:string" />
+        <xs:element name="FechaCobro" type="xs:date" />
+        <xs:element name="Importe" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Kilometraje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="KmInicial" type="xs:int" />
+        <xs:element name="KmFinal" type="xs:int" />
+        <xs:element name="KmRecorrido" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Visitados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TotalClientes" type="xs:int" />
+        <xs:element name="ClienteVisitados" type="xs:int" />
+        <xs:element name="VisitadosVenta" type="xs:int" />
+        <xs:element name="VisitadosSinVenta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FueraRuta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FueraRuta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FueraRutaVenta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FueraRutaVenta" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TiempoTotal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TiempoTotal" type="xs:time" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TiempoVisita">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TiempoVisita" type="xs:time" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

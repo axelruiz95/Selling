@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteVentasVendedor" targetNamespace="http://tempuri.org/ReporteVentasVendedor.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteVentasVendedor.xsd" xmlns:mstns="http://tempuri.org/ReporteVentasVendedor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Productos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Ventas" type="xs:int" />
+        <xs:element name="Faltantes" type="xs:int" />
+        <xs:element name="DevCliente" type="xs:int" />
+        <xs:element name="Ajuste" type="xs:int" />
+        <xs:element name="BonAjuste" type="xs:int" />
+        <xs:element name="Liquidacion" type="xs:int" />
+        <xs:element name="Descuento" type="xs:double" />
+        <xs:element name="Precio" type="xs:double" />
+        <xs:element name="Importe" type="xs:double" />
+        <xs:element name="IEPS" type="xs:double" />
+        <xs:element name="ImporteSinImpto" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VentasVendedorG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="Ventas" type="xs:double" />
+        <xs:element name="Faltantes" type="xs:double" />
+        <xs:element name="DevCliente" type="xs:double" />
+        <xs:element name="Ajuste" type="xs:double" />
+        <xs:element name="BonAjuste" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

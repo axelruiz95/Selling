@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LiquidacionDesglose" targetNamespace="http://tempuri.org/VENTAS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/VENTAS.xsd" xmlns:mstns="http://tempuri.org/VENTAS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Detalle1">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ClaveProducto" type="xs:string" />
+				<xs:element name="Nombre" type="xs:string" />
+				<xs:element name="Carga" type="xs:int" />
+				<xs:element name="Existencia" type="xs:int" />
+				<xs:element name="Caduco" type="xs:int" />
+				<xs:element name="Baja" type="xs:int" />
+				<xs:element name="Devolucion" type="xs:int" />
+				<xs:element name="OtrosConceptos" type="xs:int" />
+				<xs:element name="Ajuste" type="xs:int" />
+				<xs:element name="PiezasVendidas" type="xs:int" />
+				<xs:element name="Importe" type="xs:float" />
+				<xs:element name="PiezasFaltantes" type="xs:int" />
+				<xs:element name="ImporteFaltante" type="xs:float" />
+				<xs:element name="ClaveCEDI" type="xs:string" />
+				<xs:element name="VendedorID" type="xs:string" />
+				<xs:element name="NombreCEDI" type="xs:string" />
+				<xs:element name="VendedorClave" type="xs:string" />
+				<xs:element name="Vendedor" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Charola">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Cargas" type="xs:int" />
+				<xs:element name="Vacias" type="xs:int" />
+				<xs:element name="Total" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Desglose">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Linea1" type="xs:string" />
+				<xs:element name="Monedas" type="xs:string" />
+				<xs:element name="Linea2" type="xs:string" />
+				<xs:element name="MEDDESC" type="xs:string" />
+				<xs:element name="VADDESC" type="xs:float" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Totales">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Ventas" type="xs:float" />
+				<xs:element name="TotalFaltantes" type="xs:float" />
+				<xs:element name="BonificacionAjuste" type="xs:float" />
+				<xs:element name="TotalDevolucion" type="xs:float" />
+				<xs:element name="TotalAjuste" type="xs:float" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

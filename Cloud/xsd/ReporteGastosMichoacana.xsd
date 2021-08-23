@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteGastos" targetNamespace="http://tempuri.org/ReporteGastosMichoacana.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteGastosMichoacana.xsd" xmlns:mstns="http://tempuri.org/ReporteGastosMichoacana.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Gastos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CEDI" type="xs:string" />
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="Folio" type="xs:string" />
+        <xs:element name="Concepto" type="xs:string" />
+        <xs:element name="SubTotal" type="xs:double" />
+        <xs:element name="Impuesto" type="xs:double" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="Porcentaje" type="xs:double" />
+        <xs:element name="Comentario" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AcumuladoConcepto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CEDI" type="xs:string" />
+        <xs:element name="Vendedor" type="xs:string" />
+        <xs:element name="Concepto" type="xs:string" />
+        <xs:element name="Total" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

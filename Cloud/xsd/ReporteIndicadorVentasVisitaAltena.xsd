@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/DiarioActividadesRipja.xsd" xmlns:mstns="http://tempuri.org/DiarioActividadesRipja.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/DiarioActividadesRipja.xsd" elementFormDefault="qualified" id="DiarioActividadesRipja">
+  <xs:element name="Indicadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CEDI" type="xs:string" />
+        <xs:element name="Ruta" type="xs:string" />
+        <xs:element name="Fecha" type="xs:date" />
+        <xs:element name="TotalClientes" type="xs:int" />
+        <xs:element name="Visitados" type="xs:int" />
+        <xs:element name="NoVisitados" type="xs:int" />
+        <xs:element name="Eficiencia" type="xs:float" />
+        <xs:element name="VisitadosVenta" type="xs:int" />
+        <xs:element name="SinVenta" type="xs:int" />
+        <xs:element name="CodigoNoLeido" type="xs:int" />
+        <xs:element name="Eficiencia2" type="xs:float" />
+        <xs:element name="FueraFrecuencia" type="xs:int" />
+        <xs:element name="FueraFrecuenciaVenta" type="xs:int" />
+        <xs:element name="Eficiencia3" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

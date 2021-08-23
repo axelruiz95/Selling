@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteLiquidacionLaFlorida" targetNamespace="http://tempuri.org/ReporteLiquidacionLaFlorida.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteLiquidacionLaFlorida.xsd" xmlns:mstns="http://tempuri.org/ReporteLiquidacionLaFlorida.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LiquidacionProducto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VendedorID" type="xs:string" />
+        <xs:element name="NombreVendedor" type="xs:string" />
+        <xs:element name="DiaClave" type="xs:string" />
+        <xs:element name="ProductoClave" type="xs:string" />
+        <xs:element name="NombreProducto" type="xs:string" />
+        <xs:element name="InventarioInicial" type="xs:int" />
+        <xs:element name="Recarga" type="xs:int" />
+        <xs:element name="DevolucionCte" type="xs:int" />
+        <xs:element name="Promocion" type="xs:int" />
+        <xs:element name="Descarga" type="xs:int" />
+        <xs:element name="Venta" type="xs:int" />
+        <xs:element name="Importe" type="xs:double" />
+        <xs:element name="SimboloMoneda" type="xs:string" />
+        <xs:element name="Consigna" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LiquidacionConCre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FolioVenta" type="xs:string" />
+        <xs:element name="FolioFactura" type="xs:string" />
+        <xs:element name="FechaHoraAlta" type="xs:string" />
+        <xs:element name="ClienteClave" type="xs:string" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="Kilos" type="xs:double" />
+        <xs:element name="SimboloMoneda" type="xs:string" />
+        <xs:element name="Descuento" type="xs:double">
+        </xs:element>
+        <xs:element name="Fase" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LiquidacionCobranza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FolioCobranza" type="xs:string" />
+        <xs:element name="FolioFactura" type="xs:string" />
+        <xs:element name="FechaFactura" type="xs:string" />
+        <xs:element name="Cliente" type="xs:string" />
+        <xs:element name="Total" type="xs:double" />
+        <xs:element name="FechaCobranza" type="xs:string" />
+        <xs:element name="SimboloMoneda" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DesgloseMonedas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Monedas" type="xs:string" />
+        <xs:element name="SimboloMoneda" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DetalleCobranza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DescripcionTipo" type="xs:string" />
+        <xs:element name="DescripcionBanco" type="xs:string" />
+        <xs:element name="Referencia" type="xs:string" />
+        <xs:element name="FechaCheque" type="xs:string" />
+        <xs:element name="Importe" type="xs:double" />
+        <xs:element name="SimboloMoneda" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DesgloseBilletes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Billetes" type="xs:string" />
+        <xs:element name="SimboloMoneda" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ClaveAlmacen" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Domicilio" type="xs:string" />
+        <xs:element name="Telefono" type="xs:string" />
+        <xs:element name="ClaveAlmacenABordo" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

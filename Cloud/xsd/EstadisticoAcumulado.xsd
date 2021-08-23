@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/AgrupadoPorFamilia.xsd" xmlns:mstns="http://tempuri.org/AgrupadoPorFamilia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/AgrupadoPorFamilia.xsd" elementFormDefault="qualified" id="AgrupadoPorFamilia">
+  <xs:element name="EstadisticoAcumulado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Total" type="xs:decimal" />
+        <xs:element name="TotalAnt" type="xs:decimal" />
+        <xs:element name="Generico" type="xs:string" />
+        <xs:element name="Nombre" type="xs:string" />
+        <xs:element name="Agrupador" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

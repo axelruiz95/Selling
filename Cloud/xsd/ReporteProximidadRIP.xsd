@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteProximidadRIP" targetNamespace="http://tempuri.org/ReporteProximidadRIP.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReporteProximidadRIP.xsd" xmlns:mstns="http://tempuri.org/ReporteProximidadRIP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Proximidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Esquema" type="xs:string" />
+        <xs:element name="Clave" type="xs:string" />
+        <xs:element name="Producto" type="xs:string" />
+        <xs:element name="CoberturaW" type="xs:float" />
+        <xs:element name="CoberturaW4" type="xs:float" />
+        <xs:element name="ClientesConVentaW" type="xs:float" />
+        <xs:element name="ClientesConVentaW4" type="xs:float" />
+        <xs:element name="VentaNetaW" type="xs:float" />
+        <xs:element name="VentaNetaW4" type="xs:float" />
+        <xs:element name="DevolucionW" type="xs:float" />
+        <xs:element name="DevolucionW4" type="xs:float" />
+        <xs:element name="VentPromSemW" type="xs:float" />
+        <xs:element name="VentPromSemW4" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

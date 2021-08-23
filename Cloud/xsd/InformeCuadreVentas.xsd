@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReporteInformeClientes" targetNamespace="http://tempuri.org/InformeCuadreVentas.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/InformeCuadreVentas.xsd" xmlns:mstns="http://tempuri.org/InformeCuadreVentas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InformeCuadreVentas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RUTClave" type="xs:string" />
+        <xs:element name="VentasSinImpuestos" type="xs:float" />
+        <xs:element name="IVA" type="xs:float" />
+        <xs:element name="IEPS" type="xs:float" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
